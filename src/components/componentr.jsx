@@ -1,0 +1,114 @@
+import { Heading, Button, Image, Box } from "@chakra-ui/react";
+
+function Header() {
+  return (
+    <Box
+      className="contenedorPadre"
+      display="flex"
+      flexDirection="column"
+      alignItems="flex-start"
+      justifyContent="space-between"
+    >
+      <Box
+        className="contenedorImgSuperior"
+        bgImage="url('https://cdn.pixabay.com/photo/2019/01/06/18/18/sunset-3917605_640.jpg')"
+        bgRepeat="no-repeat"
+        bgSize="cover"
+        bgPosition="center"
+        height="450px"
+        width="100vw"
+        boxSizing="border-box"
+        flexDirection="column"
+        pr="30px"
+      >
+        <Heading
+          as="h2"
+          size="2xl"
+          color="white"
+          position="absolute"
+          mb="0"
+          ml="0"
+          w="100%"
+          boxSizing="border-box"
+          fontWeight="bold"
+          textAlign="center"
+        >
+          DOMINA EL TERRENO
+        </Heading>
+        <Box
+          className="contenedorBotones"
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+          width="100%"
+          py={12}
+          bgImage="url('https://bit.ly/2Z4KKcF')"
+          bgPosition="center"
+          bgRepeat="no-repeat"
+          mb={2}
+        >
+          <Button
+            className="botonIzquierdo"
+            colorScheme="teal"
+            variant="outline"
+            position="absolute"
+            mb="0"
+            ml="0"
+            boxSizing="border-box"
+            fontWeight="bold"
+            textAlign="center"
+          >
+            Button
+          </Button>
+          <Button
+            className="botonDerecho"
+            colorScheme="teal"
+            variant="outline"
+            position="absolute"
+            mb="0"
+            ml="0"
+            boxSizing="border-box"
+            fontWeight="bold"
+            textAlign="center"
+          >
+            Button
+          </Button>
+        </Box>
+      </Box>
+
+      <Box
+        className="contenedorImgInferior"
+        display="flex"
+        justifyContent="left"
+        alignItems="centerleft"
+        position="relative"
+        width="fit-content"
+        paddingLeft="30px"
+      >
+        <Image
+          w="450px"
+          h="450px"
+          objectFit="cover"
+          src="https://cdn.pixabay.com/photo/2019/01/06/18/18/sunset-3917605_640.jpg"
+          alt="Dan Abramov"
+        />
+        <Heading
+          as="h2"
+          size="lg"
+          color="white"
+          position="absolute"
+          mb="0"
+          ml="0"
+          w="100%"
+          boxSizing="border-box"
+          fontWeight="bold"
+          textAlign="center"
+        >
+          DOMINA EL TERRENO
+        </Heading>
+      </Box>
+    </Box>
+  );
+}
+
+export default Header;
